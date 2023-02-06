@@ -12,6 +12,11 @@ public class polygonTester {
         System.out.println("Enter the number of sides your " + shapeType +  " has: ");
         double sides = input.nextDouble();
 
+        if(sides < 3)
+        {
+            return "This IS NOT A POLYGON!!!!"
+        }
+
         System.out.println("Enter the length of your polygon's sides: ");
         double sideLength = input.nextDouble();
         

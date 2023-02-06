@@ -7,6 +7,11 @@ public class Polygon {
      * @author Aiden Michael Leon Guerrero San Nicolas
      */
 
+
+    /**
+     * @
+     *
+     */
     private double sides;
     private double sideLength;
     private String shapeType;
@@ -31,11 +36,21 @@ public class Polygon {
         this.shapeType = sT;
     }
 
+
+    /**
+     *
+     * @getNumSides This returns the number of sides the user inputs.
+     */
     public double getNumSides()
     {
         return sides;
     }
 
+
+    /**
+     *
+     * @getSideLength This returns the side Length to the user.
+     */
     public double getSideLength()
     {
         return sideLength;
