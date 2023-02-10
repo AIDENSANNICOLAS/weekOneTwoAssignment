@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.util.Arrays;
 
 public class Polygon {
     /**
@@ -17,6 +18,30 @@ public class Polygon {
     private String shapeType;
     private double area;
     private double perimeter;
+
+    private static String test = "square";
+    // private static String test = Arrays.toString(new String[]{"triangle", "square", "quadrilateral", "pentagon", "Trapezium", "Kite", "hexagon", "Parallelogram", "heptagon", "Rhombus", "octagon", "nonagon", "decagon"});
+
+
+    //TO LOWER CASE EVERYTHING TO RUN TEST PROEPERLY
+//String response = statement;
+//		int responseLength = response.length();
+//		statement = statement.replaceAll("\\s", "").toLowerCase();
+
+
+    public static Object shapeTypeVerify(String stVerify)
+    {
+        if (!(stVerify == test)) {
+
+            stVerify = "a  wrong answer";
+            return null;
+        }
+
+
+        return shapeTypeVerify(stVerify);
+
+
+    }
 
 
 
