@@ -13,52 +13,26 @@ public class Polygon {
      * @
      *
      */
-    private double sides;
+    private int sides;
     private double sideLength;
     private String shapeType;
     private double area;
     private double perimeter;
 
-    private static String test = "square";
-    // private static String test = Arrays.toString(new String[]{"triangle", "square", "quadrilateral", "pentagon", "Trapezium", "Kite", "hexagon", "Parallelogram", "heptagon", "Rhombus", "octagon", "nonagon", "decagon"});
-
-
-    //TO LOWER CASE EVERYTHING TO RUN TEST PROEPERLY
-//String response = statement;
-//		int responseLength = response.length();
-//		statement = statement.replaceAll("\\s", "").toLowerCase();
-
-
-    public static Object shapeTypeVerify(String stVerify)
-    {
-        if (!(stVerify == test)) {
-
-            stVerify = "a  wrong answer";
-            return null;
-        }
-
-
-        return shapeTypeVerify(stVerify);
-
-
-    }
-
-
-
     public Polygon()
     {
-        sides = 3.0;
+        sides = 3;
         sideLength = 1.0;
         shapeType = "Triangle";
         perimeter = sides * sideLength;
 
     }
 
-    public Polygon(double s, double sL, String sT)
+    public Polygon(int s, double sL, String sT)
     {
-        this.sides = s;
-        this.sideLength = sL;
-        this.shapeType = sT;
+        sides = s;
+        sideLength = sL;
+        shapeType = sT;
     }
 
 
@@ -96,10 +70,10 @@ public class Polygon {
 
     /**
      *
-     * @param newSideLength Allowing the User to change the side Length HIIII
+     * @param newSideLength Allowing the User to change the side Length
      */
 
-    public void setSideLength(double newSideLength)
+    public void setSideLength(int newSideLength)
     {
         sides = newSideLength;
     }
