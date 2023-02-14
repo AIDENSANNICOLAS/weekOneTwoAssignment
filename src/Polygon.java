@@ -14,6 +14,10 @@ public class Polygon {
     private double area;
     private double perimeter;
 
+
+    /**
+     * @Polygon Default Polygon if no input from user.
+     */
     public Polygon()
     {
         sides = 3;
@@ -50,12 +54,19 @@ public class Polygon {
         return sideLength;
     }
 
+    /**
+     *
+     * @return This returns the shapeType.
+     */
     public String getShapeType()
     {
         return shapeType;
     }
 
-
+    /**
+     *
+     * @return This returns the perimeter.
+     */
     public double getPerimeter()
     {
         perimeter = sides * sideLength;
@@ -74,7 +85,10 @@ public class Polygon {
     }
 
 
-
+    /**
+     *
+     * @return This returns the area for a triangle
+     */
     public double getArea()
     {
         if(sides >= 3 && sideLength>1.0) {
@@ -94,7 +108,10 @@ public class Polygon {
     //IF THE NUMBER OF SIDES ARE 3 THEN (if statement) DIVIDE (sideLength * sideLength) by two
     //for
 
-
+    /**
+     *
+     * @return This returns the text message after inputting information from the console.
+     */
 
     public String toString()
     {
